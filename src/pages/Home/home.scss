@@ -1,0 +1,73 @@
+// styles for the home page
+.home-page-container {
+  display: flex;
+  .left-side-container {
+    min-width: 200px;
+    max-width: 30%;
+    padding: 10px;
+    background-color: #f58a99;
+    height: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .right-side-container {
+    width: 100%;
+    padding: 10px;
+    .right-side-contents {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      .subcategory-detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f58a99;
+        border: 1px solid #f58a99;
+        color: #eee;
+        font-size: 24px;
+        height: 40px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+// media query for mobile view
+@media only screen and (max-width: 480px) {
+  .home-page-container {
+    flex-flow: column;
+    .left-side-container {
+      width: auto !important;
+      max-width: 100%;
+    }
+    .right-side-container {
+      width: auto;
+      padding: 10px;
+      .right-side-contents {
+        .card-detail-container {
+          max-width: 100%;
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+// media query for tablets view
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .home-page-container {
+    .left-side-container {
+      min-width: 250px !important;
+    }
+  }
+}
+
+//media query for laptops and big screens
+@media only screen and (min-width: 1025px) {
+  .home-page-container {
+    .left-side-container {
+      min-width: 300px !important;
+    }
+  }
+}

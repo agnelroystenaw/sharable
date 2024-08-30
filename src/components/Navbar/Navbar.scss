@@ -1,0 +1,28 @@
+// styles for the navbar
+.app-navbar {
+  background-color: #ad1f43;
+  header {
+    background-color: transparent !important;
+  }
+  .items-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .app-title {
+    font-size: 32px;
+    letter-spacing: 0.25px;
+  }
+}
+
+// media query for the mobile view
+@media only screen and (max-width: 480px) {
+  .app-navbar {
+    .app-title {
+      font-size: 24px;
+      letter-spacing: 0.25px;
+    }
+    .adjusting-div {
+      display: none;
+    }
+  }
+}

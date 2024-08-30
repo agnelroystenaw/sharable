@@ -1,0 +1,35 @@
+// styles for the Accordian component
+.accordian-container,
+.accordian-container-expanded {
+  border: 1px solid #f58a99;
+  font-size: 18px;
+  color: #444 !important;
+  .accordian-label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .accordian-contents {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    font-size: 16px;
+    .accordian-option,
+    .accordian-option-selected {
+      border: none;
+      background-color: transparent;
+      display: flex;
+      align-items: flex-start;
+      padding: 0px;
+      cursor: pointer;
+    }
+    .accordian-option-selected {
+      color: #ad1f43;
+    }
+  }
+  margin: 0px !important;
+}
+
+.accordian-container-expanded {
+  opacity: 0.9;
+}

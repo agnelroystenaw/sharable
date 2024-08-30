@@ -1,0 +1,24 @@
+// styles for the product card
+.card-detail-container {
+  .description {
+    color: #444;
+    font-size: 16px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    .btn-action {
+      border: 1px solid #ad1f43;
+      color: #ad1f43;
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: #f58a99;
+        border: 1px solid #f58a99;
+        color: #fff;
+      }
+    }
+  }
+}
